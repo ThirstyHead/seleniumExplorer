@@ -1,0 +1,72 @@
+{
+  "id": "18207faa-1150-45ec-9119-3f33d84bf6d8",
+  "version": "2.0",
+  "name": "AppleTest",
+  "url": "https://www.apple.com",
+  "tests": [{
+    "id": "3e6da72a-677b-49f9-9185-f954a55ba457",
+    "name": "BuyIphone",
+    "commands": [{
+      "id": "061fe4c4-679e-44c9-9e99-2740e13b6d06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb724169-0b26-4c41-902d-bb6fbc308df3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1963x1127",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "358d7b02-abe8-4ad3-830d-1bed2e27b882",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iPhone",
+      "targets": [
+        ["linkText=iPhone", "linkText"],
+        ["css=.ac-gn-link-iphone", "css:finder"],
+        ["xpath=//nav[@id='ac-globalnav']/div/ul[2]/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/iphone/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iPhone')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7c2cd49-4c9e-4656-bbeb-3c164ac8a615",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chapternav-item-shop-iphone .chapternav-icon",
+      "targets": [
+        ["css=.chapternav-item-shop-iphone .chapternav-icon", "css:finder"],
+        ["xpath=//nav[@id='chapternav']/div/ul/li[12]/a/figure", "xpath:idRelative"],
+        ["xpath=//li[12]/a/figure", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d095d239-3b4c-4249-9379-fe69f775cd2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .rf-cards-scroller-itemview .rf-hcard-cta",
+      "targets": [
+        ["css=div:nth-child(1) > .rf-cards-scroller-itemview .rf-hcard-cta", "css:finder"],
+        ["xpath=//div[@id='shelf-1_section']/div[2]/div/div/div/div/div/div/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.apple.com/shop/buy-iphone/iphone-14-pro')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2525258a-1454-4f7e-a13f-eae9b12de6c0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3e6da72a-677b-49f9-9185-f954a55ba457"]
+  }],
+  "urls": ["https://www.apple.com/"],
+  "plugins": []
+}

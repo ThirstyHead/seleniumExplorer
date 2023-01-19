@@ -4,7 +4,7 @@
   "description": "Exploring Selenium's capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha visit-apple.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ThirstyHead/seleniumExplorer#readme",
   "dependencies": {
+    "mocha": "^10.2.0",
     "selenium-webdriver": "^4.7.1"
   }
 }
